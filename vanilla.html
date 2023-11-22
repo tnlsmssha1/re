@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+    <span>Total Click: </span>
+    <span id="point"></span><br>
+    <button id="btn">Click</button>
+</body>
+<script>
+    let counter=0;
+    let button=document.getElementById('btn');
+    let div=document.getElementById('point');
+    function handleClick(){
+        counter=counter+1;
+        div.innerText=counter;
+    }
+    button.addEventListener("click",handleClick)
+</script>
+</html>
